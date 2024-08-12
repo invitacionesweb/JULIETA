@@ -84,7 +84,7 @@
             <img class="icon" src="./figuras/instagram.png" alt="instagram">
             <h2>INSTAGRAM</h2>
             <p>¡No me quiero perder de nada! Compartí las fotos y videos de la fiesta y no olvides etiquetarme.</p>
-            <a class="boton" href="#">@xxxxxxxxx</a>
+            <a class="boton" href="https://www.instagram.com/_july_ily_/">@_july_ily_</a>
         </div>
         <div data-aos="fade-up"   class="ubicacion-bloque">
             <img class="icon"  src="./figuras/spotify.png" alt="playlist">
@@ -177,5 +177,17 @@
       <script>
         AOS.init();
     </script>
+      <script>
+
+        function copyToClipboard(text) {
+           const tempInput = document.createElement("input");
+           document.body.appendChild(tempInput);
+           tempInput.value = text;
+           tempInput.select();
+           document.execCommand("copy");
+           document.body.removeChild(tempInput);
+           alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+         }
+       </script>
 </body>
 </html>
